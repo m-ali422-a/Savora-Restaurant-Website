@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import Animation from '../components/Animation';
 import Button from '../sharedComponents/Button';
+import SubTitle from '../sharedComponents/SubTitle';
 
 const Hero = () => {
 
@@ -13,13 +14,13 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col items-center justify-center h-screen bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat pt-18">
-        <Animation y={-20} delay={0.2} className="text-orange-500 tracking-wider">
-            <p>WHERE FLAVOR MEETS ELEGANCE</p>
-        </Animation>
+        <SubTitle text={'WHERE FLAVOR MEETS ELEGANCE'} y={-20} />
 
         <Animation>
-            <h1 className='text-6xl w-3xl text-center font-urbanist font-medium mt-6'>Crafted for unforgettable dining moments.</h1>
-        </Animation>
+        <h1 className="sm:text-6xl sm:w-3xl text-center font-urbanist font-medium mt-6 ">
+        Crafted for unforgettable dining moments.
+        </h1>
+      </Animation>
 
         <Animation delay={0.2}>
             <p className='text-zinc-600 w-md text-center mt-4 tracking-wide'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space made for every celebration.</p>

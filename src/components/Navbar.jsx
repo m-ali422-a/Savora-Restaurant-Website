@@ -1,44 +1,72 @@
 import { MenuIcon, XIcon } from "lucide-react";
 import { navLinks } from "../data/data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../sharedComponents/Button";
 
 const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
-    const [mobileMenu, setMobileMenu] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 z-20 px-6 sm:px-35 w-full transition-all duration-300 bg-transparent">
-      <div className="flex items-center justify-between py-5">
+    <nav
+      className={`fixed top-0 z-20 px-6 sm:px-35 w-full transition-all duration-300 ${scroll ? "bg-white/70 backdrop-blur-md" : "bg-transparent"} `}
+    >
+      <div className="flex items-center justify-between py-4">
         <a href="/">
           <img className="" src="/assets/logo.svg" alt="" />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
           {navLinks?.map((item) => (
-            <a className="hover:text-zinc-600 font-medium" key={item.name} href={item.href}>
+            <a
+              className="hover:text-zinc-600 font-medium"
+              key={item.name}
+              href={item.href}
+            >
               {item.name}
             </a>
           ))}
         </div>
 
-        <Button/>
+        <Button />
 
-        <button onClick={()=> setMobileMenu(true)} className="md:hidden bg-zinc-800 text-white p-2 rounded-md cursor-pointer">
+        <button
+          onClick={() => setMobileMenu(true)}
+          className="md:hidden bg-zinc-800 text-white p-2 rounded-md cursor-pointer"
+        >
           <MenuIcon />
         </button>
 
         {/* Menu for small screens */}
 
-        <div className={`flex flex-col justify-center items-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transition-all duration-300 ${mobileMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div
+          className={`flex flex-col justify-center items-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "translate-x-full"}`}
+        >
           <div className="flex flex-col items-center space-y-6 font-medium">
             {navLinks.map((item) => (
-              <a onClick={()=> setMobileMenu(false)} className="text-2xl text-zinc-800 hover:text-orange-500 transition" key={item.name} href={item.href}>
+              <a
+                onClick={() => setMobileMenu(false)}
+                className="text-2xl text-zinc-800 hover:text-orange-500 transition"
+                key={item.name}
+                href={item.href}
+              >
                 {item.name}
               </a>
-
             ))}
-            <button onClick={()=> setMobileMenu(false)} className="bg-zinc-800 text-white p-2 rounded-md cursor-pointer"><XIcon/></button>
+            <button
+              onClick={() => setMobileMenu(false)}
+              className="bg-zinc-800 text-white p-2 rounded-md cursor-pointer"
+            >
+              <XIcon />
+            </button>
           </div>
         </div>
       </div>

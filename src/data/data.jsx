@@ -1,4 +1,4 @@
-export const Data = [
+export const statsData = [
     {
         number: "01",
         title: "Premium Ingredients",
@@ -126,42 +126,42 @@ export const testimonials = [
         review: "Every dish was fresh, flavorful, and beautifully presented. The service was outstanding, and we'll definitely be back again.",
         name: "Aarav Sharma",
         location: "Mumbai, India",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.openai.com/static-rsc-4/6KpfRn3ttCz5VBXB4YibAWf4LRmvhQfbiV5gamRT4m59jwN1EMgBjV9o40uHwegc3NdoqN8RvsmFtV1FVOpp5foCS_yHWgg9jL-az65XlevNX7MO0moLz3HcuXzt3f7TQWs0xzGFc2ZAEns5cyrmGJ54nnivTKCvc5MwMWGQvQE?purpose=inline"
     },
     {
         rating: 5,
         review: "Amazing food, quick service, and a welcoming atmosphere. Every meal exceeded our expectations from start to finish.",
         name: "Rohan Mehta",
         location: "Bangalore, India",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.openai.com/static-rsc-4/RnJllElq1EROMAOQxastKhav9Ga3fpX_NrMSNOro73xEnbTTC5pIRkByJvN8JEV6cLs_mK7H5eutOazKnyumR05HrloQJdh9MxnQvNu0kW_Pztn9dvwtjHX9ISsF8f40yT5-00N8iNYsGDFp3QSHkvrmLFjIN6RJqwwYp9ozDW4?purpose=inline"
     },
     {
         rating: 5,
         review: "A wonderful dining experience with delicious food, friendly staff, and an atmosphere that made us feel right at home.",
         name: "Emily Carter",
         location: "London, UK",
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&h=120&auto=format&fit=crop"
     },
     {
         rating: 5,
         review: "The flavors were authentic, every dish was perfectly prepared, and the presentation made the experience even more enjoyable.",
         name: "Daniel Kim",
         location: "Seoul, South Korea",
-        avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=120&h=120&auto=format&fit=crop"
     },
     {
         rating: 5,
         review: "Beautiful presentation, fresh ingredients, and outstanding service. It's easily one of my favorite places to dine.",
         name: "Sofia Martinez",
         location: "Barcelona, Spain",
-        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=120&h=120&auto=format&fit=crop"
     },
     {
         rating: 5,
         review: "Great food, attentive staff, and a cozy ambiance. Every visit has been memorable, and I highly recommend it.",
         name: "Daniel Wong",
         location: "Sydney, Australia",
-        avatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=120&h=120&auto=format&fit=crop"
+        img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=120&h=120&auto=format&fit=crop"
     }
 ];
 
