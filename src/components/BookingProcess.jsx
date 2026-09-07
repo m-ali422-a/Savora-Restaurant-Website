@@ -5,14 +5,14 @@ import Animation from "./Animation";
 
 const BookingProcess = () => {
   return (
-    <section id="booking-process" className="px-auto mt-40">
+    <section id="booking-process" className="px-auto mt-24 md:mt-40">
       <div className="grid md:grid-cols-2 gap-15 md:gap-25">
         {/* left side */}
         <div className="flex flex-col text-center md:text-left">
           <SubTitle text={"Table Reservation Process"} />
 
           <Animation delay={0.2}>
-            <h2 className="text-4xl md:text-5xl mt-4 mb-15">Reserve your table in three simple steps</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mt-4 mb-10 md:mb-15 text-balance">Reserve your table in three simple steps</h2>
           </Animation>
 
           <Animation className='flex gap-1 mb-6 justify-center md:justify-start'>

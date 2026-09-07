@@ -11,7 +11,7 @@ const Features = () => {
   };
 
   return (
-    <section id="features" className="px-auto mt-40">
+    <section id="features" className="px-auto mt-24 md:mt-40">
       <div className="text-center mb-15">
         <SubTitle text={"What Sets Us Apart"} />
         <Animation delay={0.2}>
@@ -21,7 +21,7 @@ const Features = () => {
         </Animation>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-15 mx-auto ">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-15 mx-auto">
         <div className="space-y-12">
           {featuresData.map((item, index) => {
             const IconComponent = icons[item.icon];

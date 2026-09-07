@@ -2,8 +2,8 @@ import Animation from "./Animation";
 
 const About = () => {
   return (
-    <section id="about" className="px-auto mt-45">
-      <div className="flex flex-col sm:flex-row gap-15 mx-auto max-w-7xl">
+    <section id="about" className="px-auto mt-24 md:mt-45">
+      <div className="flex flex-col sm:flex-row gap-8 sm:gap-15 mx-auto max-w-7xl">
         {/* left side  */}
         <Animation scale={0.8} y={0}>
           <img
@@ -21,8 +21,8 @@ const About = () => {
             <img src="/assets/iconR.png" alt="" />
           </Animation>
 
-          <Animation className="w-130">
-            <h2 className="text-5xl mt-5">
+          <Animation>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mt-5 text-balance">
               Experience dining beyond expectations
             </h2>
           </Animation>

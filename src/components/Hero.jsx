@@ -13,17 +13,17 @@ const Hero = () => {
     ]
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat pt-18">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat pt-18 px-6">
         <SubTitle text={'WHERE FLAVOR MEETS ELEGANCE'} y={-20} />
 
         <Animation>
-        <h1 className="sm:text-6xl sm:w-3xl text-center font-urbanist font-medium mt-6 ">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl max-w-3xl w-full text-center font-urbanist font-medium mt-6 text-balance">
         Crafted for unforgettable dining moments.
         </h1>
       </Animation>
 
         <Animation delay={0.2}>
-            <p className='text-zinc-600 w-md text-center mt-4 tracking-wide'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space made for every celebration.</p>
+            <p className='text-zinc-600 max-w-md w-full text-center mt-4 tracking-wide'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space made for every celebration.</p>
         </Animation>
 
         <Animation className='mt-8'>

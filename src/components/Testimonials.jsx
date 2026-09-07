@@ -5,7 +5,7 @@ import { StarIcon } from "lucide-react"
 
 const Testimonials = () => {
   return (
-    <section className="px-auto mt-40">
+    <section className="px-auto mt-24 md:mt-40">
 
         <div className="text-center mb-15">
         <SubTitle text={"LOVED BY FOOD LOVERS"} />

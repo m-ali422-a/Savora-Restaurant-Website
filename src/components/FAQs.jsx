@@ -5,12 +5,12 @@ import Animation from "./Animation";
 
 const FAQs = () => {
   return (
-    <section id="faq" className="px-auto mt-40">
+    <section id="faq" className="px-auto mt-24 md:mt-40">
       <div className="text-center mb-15">
         <SubTitle text={"FAQs"} />
 
         <Animation delay={0.2}>
-          <h2 className="text-4xl md:text-5xl max-w-fit mx-auto text-balance mt-5">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl max-w-lg mx-auto text-balance mt-5">
             Frequently Asked Questions
           </h2>
         </Animation>
@@ -21,7 +21,7 @@ const FAQs = () => {
           <Animation key={index} y={150} delay={index * 0.15}>
             <details className="border border-slate-200 text-zinc-600 rounded-lg group">
               <summary className="flex items-center justify-between p-4 cursor-pointer list-none hover:bg-slate-50/50 transition-colors [&::-webkit-details-marker]:hidden">
-                <span className="text-zinc-700 pr-50">{item.question}</span>
+                <span className="text-zinc-700 pr-4 flex-1">{item.question}</span>
                 <span className="size-7 rounded-full bg-black/5 grid place-content-center shrink-0">
                   <Plus size={14} className="group-open:hidden" />
                   <X size={14} className="hidden group-open:block" />

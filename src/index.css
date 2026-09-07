@@ -8,10 +8,14 @@
 
 @layer base {
     body {
-        @apply bg-white text-black text-sm;
+        @apply bg-white text-black text-sm overflow-x-hidden;
     }
 }
 
 @utility px-auto {
     @apply px-6 md:px-12 lg:px-24 xl:px-40;
+}
+
+html{
+    scroll-behavior: smooth;
 }

@@ -4,7 +4,7 @@ import Animation from "./Animation";
 
 const Dishes = () => {
   return (
-    <section id="dishes" className="px-auto mt-40">
+    <section id="dishes" className="px-auto mt-24 md:mt-40">
       <div className="text-center mb-15">
         <SubTitle text={"Chef's Signature Selection"} />
         <Animation>
@@ -14,7 +14,7 @@ const Dishes = () => {
         </Animation>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-18 ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-18">
         {dishes.map((item, index) => (
           <Animation
             key={index}
@@ -26,7 +26,7 @@ const Dishes = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="size-30 md:size-35"
+                className="size-24 sm:size-30 md:size-35"
               />
             </div>
             <p className="mt-4">{item.title}</p>

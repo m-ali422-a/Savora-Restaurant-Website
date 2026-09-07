@@ -21,7 +21,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between py-4">
         <a href="/">
-          <img className="" src="/assets/logo.svg" alt="" />
+          <img className="w-30" src="/assets/Logo.png" alt="" />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Menu for small screens */}
 
         <div
-          className={`flex flex-col justify-center items-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "translate-x-full"}`}
+          className={`md:hidden flex flex-col justify-center items-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transition-all duration-300 ${mobileMenu ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none"}`}
         >
           <div className="flex flex-col items-center space-y-6 font-medium">
             {navLinks.map((item) => (
@@ -61,6 +61,13 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
+            <a
+              onClick={() => setMobileMenu(false)}
+              href="#booking-process"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-full transition"
+            >
+              Book a Table
+            </a>
             <button
               onClick={() => setMobileMenu(false)}
               className="bg-zinc-800 text-white p-2 rounded-md cursor-pointer"
